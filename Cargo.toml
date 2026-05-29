@@ -1,0 +1,11 @@
+[package]
+name = "forge-conservation"
+version = "0.1.0"
+edition = "2021"
+description = "Conservation ratio tracking for tile transforms — SuperInstance spectral conservation theorems applied to tile pipelines"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
