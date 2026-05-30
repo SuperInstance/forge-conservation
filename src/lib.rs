@@ -132,7 +132,7 @@ pub fn shannon_entropy(data: &[u8]) -> f64 {
 /// Perfect conservation = 1.0, total loss = 0.0.
 pub fn conservation_ratio(input: &[u8], output: &[u8]) -> f64 {
     if input.is_empty() {
-        return if output.is_empty() { 1.0 } else { 1.0 };
+        return 1.0;
     }
 
     let h_in = shannon_entropy(input);
